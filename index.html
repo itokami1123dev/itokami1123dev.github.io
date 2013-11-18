@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Hello Hello  : " />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-    <title>Hello Hello </title>
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub Meetup in Fukuoka by itokami1123dev</title>
   </head>
 
   <body>
+    <a id="forkme_banner" href="https://github.com/itokami1123dev">View on GitHub</a>
+    <div class="shell">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/itokami1123dev">View on GitHub</a>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub Meetup in Fukuoka</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-          <h1 id="project_title">Hello Hello </h1>
-          <h2 id="project_tagline"></h2>
+      <div id="no-downloads">
+        <span class="inner">
+        </span>
+      </div>
 
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h1>
-<a name="hello" class="anchor" href="#hello"><span class="octicon octicon-link"></span></a>hello</h1>
+<a name="github-meetup-in-fukuoka" class="anchor" href="#github-meetup-in-fukuoka"><span class="octicon octicon-link"></span></a>GitHub Meetup in Fukuoka</h1>
 
-<h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<p><br>
+It was a great lesson!<br>
+Thank you!  </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><br></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>
+<a name="review-of-lesson" class="anchor" href="#review-of-lesson"><span class="octicon octicon-link"></span></a>Review of lesson</h2>
+
+<p><br></p>
+
+<h4>
+<a name="create-an-empty-container" class="anchor" href="#create-an-empty-container"><span class="octicon octicon-link"></span></a>Create an empty container!</h4>
+
+<pre><code>$ mkdir fukuoka
+$ cd fukuoka/
+$ git init
+Initialized empty Git repository in xxx/fukuoka/.git/
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><br></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h4>
+<a name="add-new-file" class="anchor" href="#add-new-file"><span class="octicon octicon-link"></span></a>Add new File!</h4>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<pre><code>$ vim RREADME.md
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#   RREADME.md
+nothing added to commit but untracked files present (use "git add" to track)
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+$ git add RREADME.md 
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+$ git commit -m 'add readme'
+[master (root-commit) 0d1962b] add readme
+ 1 file changed, 2 insertions(+)
+ create mode 100644 RREADME.md
+</code></pre>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><br></p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h4>
+<a name="change-the-file" class="anchor" href="#change-the-file"><span class="octicon octicon-link"></span></a>Change the file!</h4>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<pre><code>$ vim RREADME.md 
+$ git add RREADME.md 
+$ git commit -m 'make achange'
+[master b97dc0d] make achange
+ 1 file changed, 1 insertion(+)
+</code></pre>
+
+<p><br></p>
+
+<h4>
+<a name="push-to-github" class="anchor" href="#push-to-github"><span class="octicon octicon-link"></span></a>Push to GitHub!</h4>
+
+<pre><code>$ git remote add origin git@github.com:itokami1123dev/fukuoka.git
+
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 444 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To git@github.com:itokami1123dev/fukuoka.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin.
+
+</code></pre>
+
+<p><br>
+I do my best work!
+I became a fan of github!</p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>Projects by <a href="https://github.com/itokami1123dev">itokami1123dev</a> can be found on <a href="https://github.com/itokami1123dev">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
 
     
-
   </body>
 </html>
